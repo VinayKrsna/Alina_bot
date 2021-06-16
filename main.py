@@ -24,7 +24,7 @@ def start_command(message):
 @bot.callback_query_handler(func=lambda call: True)
 def callback_worker(call):
     if call.data == "get_book":
-        bot.send_document(call.message.chat.id, open(r'C:/Uni/Bot/so100ianie_book.pdf', 'rb'))
+        bot.send_document(call.message.chat.id, open(r'./so100ianie_book.pdf', 'rb'))
 
 
 if __name__ == "__main__":
